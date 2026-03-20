@@ -23,34 +23,36 @@
 </a>
 
 <!-- ═══ NAV ══════════════════════════════════════ -->
+<!-- NEW -->
 <nav class="nav" id="nav" role="navigation" aria-label="Navegação principal">
-  <div class="nav__inner">
-    <a href="#home" class="nav__logo" aria-label="Oásis de Conforto — Página inicial">
-      <span class="nav__logo-mark" aria-hidden="true">O·C</span>
-      <span class="nav__logo-name">Oásis de Conforto</span>
-    </a>
+  <a href="#home" class="nav__logo" aria-label="Oásis de Conforto — Página inicial">
+    <span class="nav__logo-mark" aria-hidden="true">O·C</span>
+    <span class="nav__logo-name">Oásis de Conforto</span>
+  </a>
 
-    <ul class="nav__menu" id="navMenu" role="menubar">
-      <li><a href="#acomodacoes" class="nav__link" role="menuitem"><span class="t-pt">Acomodações</span><span class="t-en">Rooms</span></a></li>
-      <li><a href="#experiencia"  class="nav__link" role="menuitem"><span class="t-pt">Experiência</span><span class="t-en">Experience</span></a></li>
-      <li><a href="#localizacao"  class="nav__link" role="menuitem"><span class="t-pt">Localização</span><span class="t-en">Location</span></a></li>
-      <li><a href="#contactos"    class="nav__link" role="menuitem"><span class="t-pt">Contactos</span><span class="t-en">Contact</span></a></li>
-    </ul>
-
-    <div class="nav__right">
+  <ul class="nav__menu" id="navMenu" role="menubar">
+    <li><a href="#acomodacoes" class="nav__link" role="menuitem"><span class="t-pt">Acomodações</span><span class="t-en">Rooms</span></a></li>
+    <li><a href="#experiencia"  class="nav__link" role="menuitem"><span class="t-pt">Experiência</span><span class="t-en">Experience</span></a></li>
+    <li><a href="#localizacao"  class="nav__link" role="menuitem"><span class="t-pt">Localização</span><span class="t-en">Location</span></a></li>
+    <li><a href="#contactos"    class="nav__link" role="menuitem"><span class="t-pt">Contactos</span><span class="t-en">Contact</span></a></li>
+    <!-- Language toggle lives here now -->
+    <li class="nav__lang-item">
       <button class="lang-btn" id="langBtn" aria-label="Alterar idioma">
         <span class="lang-current" id="langCurrent">PT</span>
         <span class="lang-sep" aria-hidden="true">·</span>
         <span class="lang-other" id="langOther">EN</span>
       </button>
-      <a href="#reserva" class="nav__book-cta">
-        <span class="t-pt">Reservar</span>
-        <span class="t-en">Book Now</span>
-      </a>
-      <button class="nav__burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+    </li>
+  </ul>
+
+  <div class="nav__right">
+    <a href="#reserva" class="nav__book-cta">
+      <span class="t-pt">Reservar</span>
+      <span class="t-en">Book Now</span>
+    </a>
+    <button class="nav__burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
