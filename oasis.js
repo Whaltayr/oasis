@@ -319,7 +319,7 @@ document.getElementById('reservaForm')?.addEventListener('submit', e => {
   btn.innerHTML = `<span class="${lang === 'pt' ? 't-pt' : 't-en'}">${lang === 'pt' ? '⏳ A processar...' : '⏳ Processing...'}</span>`;
 
   const waMsgPt =
-    `Olá! Gostaria de reservar no *Oásis de Conforto*.\n\n` +
+    `Olá! Gostaria de reservar no *Residencial Maweza*.\n\n` +
     `👤 *Nome:* ${nome}\n📞 *Tel:* ${tel}\n📧 *E-mail:* ${email}\n\n` +
     `🗓 *Check-in:* ${checkin}\n🗓 *Check-out:* ${checkout}\n` +
     (quarto   ? `🛏 *Quarto:* ${quarto}\n`   : '') +
@@ -328,7 +328,7 @@ document.getElementById('reservaForm')?.addEventListener('submit', e => {
     `\nPoderia confirmar a disponibilidade? Obrigado!`;
 
   const waMsgEn =
-    `Hello! I'd like to book at *Oásis de Conforto*.\n\n` +
+    `Hello! I'd like to book at *Residencial Maweza*.\n\n` +
     `👤 *Name:* ${nome}\n📞 *Phone:* ${tel}\n📧 *Email:* ${email}\n\n` +
     `🗓 *Check-in:* ${checkin}\n🗓 *Check-out:* ${checkout}\n` +
     (quarto   ? `🛏 *Room:* ${quarto}\n`     : '') +
@@ -339,7 +339,7 @@ document.getElementById('reservaForm')?.addEventListener('submit', e => {
   const msg = lang === 'pt' ? waMsgPt : waMsgEn;
 
   setTimeout(() => {
-    window.open(`https://wa.me/244923000000?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/244936657144?text=${encodeURIComponent(msg)}`, '_blank');
 
     btn.innerHTML = `<span>✓ ${lang === 'pt' ? 'Pedido enviado! Confirmaremos em breve.' : 'Request sent! We\'ll confirm shortly.'}</span>`;
     btn.style.background = 'var(--green)';
