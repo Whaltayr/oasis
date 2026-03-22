@@ -413,36 +413,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 });
 
 /* ════════════════════════════════════════════════════
-   DARK MODE TOGGLE
-════════════════════════════════════════════════════ */
-(function initTheme() {
-  const html   = document.documentElement;
-  const btn    = document.getElementById('themeToggle');
-  const KEY    = 'maweza_theme';
-
-  // Restore saved preference (or default to light)
-  const saved  = localStorage.getItem(KEY) || 'light';
-  html.setAttribute('data-theme', saved);
-
-  btn?.addEventListener('click', () => {
-    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-theme', next);
-    localStorage.setItem(KEY, next);
-    btn.setAttribute('aria-label',
-      next === 'dark' ? 'Mudar para tema claro' : 'Mudar para tema escuro'
-    );
-
-    // Brief scale animation on the button icon
-    if (!reduced) {
-      gsap.fromTo(btn,
-        { scale: 0.75, rotate: -30 },
-        { scale: 1,    rotate: 0, duration: 0.4, ease: 'back.out(2)' }
-      );
-    }
-  });
-})();
-
-/* ════════════════════════════════════════════════════
    INIT
 ════════════════════════════════════════════════════ */
 initScrollAnimations();
