@@ -729,7 +729,7 @@ textarea {
 }
 .room-card__header h3 {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 400;
   color: var(--text);
   line-height: 1.2;
