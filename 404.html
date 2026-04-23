@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt" data-lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Não Encontrada — Residencial Maweza</title>
+  <meta name="description" content="Lamentamos, mas a página que procura não existe." />
+  
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  
+  <link rel="stylesheet" href="oasis.css" />
+
+  <style>
+    /* Specific styles for the 404 layout */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: var(--cream);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .not-found-content {
+      max-width: 600px;
+      animation: fadeIn 0.8s var(--ease-out) forwards;
+    }
+
+    .logo-404 {
+      height: 70px;
+      width: auto;
+      border-radius: 50%;
+      margin: 0 auto 2rem auto;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .not-found-content h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(5rem, 12vw, 8rem);
+      color: var(--green);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .not-found-content h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      color: var(--text);
+      margin-bottom: 1.5rem;
+    }
+
+    .not-found-content p {
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Simple fade in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="not-found-content">
+    <a href="/" aria-label="Residencial Maweza — Página inicial">
+      <img src="logo.png" alt="Residencial Maweza" class="logo-404" />
+    </a>
+
+    <h1>404</h1>
+    <h2>
+      <span class="t-pt">Página não encontrada</span>
+      <span class="t-en">Page not found</span>
+    </h2>
+    <p>
+      <span class="t-pt">Lamentamos, mas a página que procura não existe, foi movida ou o endereço está incorreto.</span>
+      <span class="t-en">We're sorry, but the page you are looking for doesn't exist, has been moved, or the address is incorrect.</span>
+    </p>
+
+    <a href="/" class="btn-book btn-book--hero">
+      <svg viewBox="0 0 16 16" fill="none" width="16" aria-hidden="true">
+        <path d="M7 12l-4-4m0 0l4-4m-4 4h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="t-pt">Voltar ao Início</span>
+      <span class="t-en">Return Home</span>
+    </a>
+  </div>
+
+  <script>
+    // Optional: Auto-detect if the user previously selected English
+    // so the 404 page translates itself automatically.
+    const savedLang = localStorage.getItem('oasisLang');
+    if (savedLang === 'en') {
+      document.documentElement.setAttribute('data-lang', 'en');
+    }
+  </script>
+
+</body>
+</html>
